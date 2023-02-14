@@ -137,7 +137,7 @@ window.addEventListener('DOMContentLoaded', () => {
         caulateList[3].value = event.target.innerText
       } else {
         // 检查第二个字符是否是0
-        if(caulateList[3].value.charAt(1)==='0'){
+        if(caulateList[3].value.charAt(1)==='0'&&caulateList[3].value.includes('-')){
           caulateList[3].value = caulateList[3].value.replace('0','')
         }
         caulateList[3].value += event.target.innerText
